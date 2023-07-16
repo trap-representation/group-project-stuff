@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Send us message</title>
+    <style>
+        body {
+            background-color: rgba(245, 223, 135, 0.855);
+            font-size: 30px;
+        }
+
+
+        p {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            justify-items: center;
+
+        }
+
+        button {
+            background-color: rgb(129, 116, 104);
+            padding-left: 6px;
+            border-radius: 3px;
+            margin-left: 20px;
+        }
+
+
+        textarea {
+            width: 40%;
+            height: 150px;
+            padding: 12px 20px;
+            box box-sizing: border-box;
+            border: 2px solid #ccc;
+            border radius: 4px;
+            background-color: white;
+            resize: none;
+            font-size: 15px;
+        }
+
+        button:hover {
+            color: rgba(224, 215, 205, 0.908);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="arg_sendmessage">
+        <h2>-Send Message to our Team</h2>
+        <div class="message">
+            <p>We Welcome You, Please Visit Anytime</p>
+        </div>
+        <form>
+            <input style="width:30%;
+                height: 20px;padding: 5px 5px;font-size: 15px;" type="text" id="Your Name"
+                placeholder="Enter Your Name">
+            <br>
+            <br>
+            <input style="width: 30%;
+                height: 20px;padding: 5px 5px;font-size: 15px;" type="tel" id="Phone Num"
+                Placeholder="Enter Your Phone">
+            <br>
+            <br>
+            <input style="width: 30%;
+                height: 20px;padding: 5px 5px;font-size: 15px;" type="email" id="email address"
+                Placeholder="Enter Your Email">
+
+            <br>
+            <br>
+            <textarea row="5000" col="5000" placeholder="Message Here..."></textarea>
+            <br>
+
+            <button class="btn">Send Message</button>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
