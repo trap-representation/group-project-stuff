@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Reservation</title>
+    <style>
+        body {
+            background-color: rgba(181, 249, 217, 0.855);
+            font-size: 20px;
+
+        }
+
+        label {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #formofreservation {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            justify-items: center;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+        button {
+            background-color: rgb(201, 164, 129);
+            padding-left: 3px 3px;
+            padding-top: 4px 4px;
+            border-radius: 6px;
+            margin-left: 20px;
+        }
+
+        b:hover {
+            text-decoration: underline;
+            color: red;
+            padding-left: 6px;
+        }
+
+        textarea {
+            width: 23%;
+            height: 50px;
+            padding: 12px 20px;
+            box box-sizing: border-box;
+            border: 2px solid #ccc;
+            border radius: 4px;
+            background-color: white;
+            resize: none;
+            font-size: 15px;
+        }
+
+        button:hover {
+            color: rgba(243, 10, 10, 0.908);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Make A Reservation</h2>
+    <hr>
+    <h3>Enter Your Personal Details</h3>
+    <b>HURRY UP!!! LIMITED SEATS ARE AVAILABLE</b>
+    <br>
+    <br>
+    <div class="formofreservation">
+        <input style="width:20%;
+        height: 20px;padding: 5px 5px;font-size: 15px; border-radius: 8px; margin-top: 10px 10px; padding: 4px;"
+            type="text" id="YourName" placeholder="Enter Your Name">
+        <br><br>
+        <input style="width:20%;
+        height: 20px;padding: 5px 5px;font-size: 15px; border-radius: 8px;margin-top: 10px 10px; padding: 4px;"
+            type="tel" id="PhoneNum" Placeholder="Enter Phone Number">
+        <br><br>
+        <input style="width:20%;
+        height: 20px;padding: 5px 5px;font-size: 15px; border-radius: 8px;margin-top: 10px 10px; padding: 4px;"
+            type="email" id="emailaddress" Placeholder="Enter Your Email">
+        <br><br>
+        <input style="width:20%;
+        height: 20px;padding: 5px 5px;font-size: 15px; border-radius: 8px;margin-top: 10px 10px; padding: 4px;"
+            type="address" id="youraddress" Placeholder="Address">
+        <br><br>
+        <select style="height:30px;border-radius: 5px;" class="form-select" id="person" name="Person" required>
+            <option value="">Select Person</option>
+            <option value="1 Person">1 Person</option>
+            <option value="2 Person">2 Person</option>
+            <option value="3 Person">3 Person</option>
+            <option value="4 Person">4 Person</option>
+            <option value="5 Person">5 Person</option>
+            <option value="6 Person">6 Person</option>
+            <option value="7 Person">7 Person</option>
+            <option value="8 Person">8 Person</option>
+            <option value="9 Person">9 Person</option>
+            <option value="10 Person">10 Person</option>
+            <option value="11 Person">11 Person</option>
+            <option value="12 Person">12 Person</option>
+            <option value="13 Person">13 Person</option>
+            <option value="14 Person">14 Person</option>
+            <option value="15 Person">15 Person</option>
+            <option value="16 Person">16 Person</option>
+            <option value="17 Person">17 Person</option>
+            <option value="18 Person">18 Person</option>
+            <option value="19 Person">19 Person</option>
+            <option value="20 Person">20 Person</option>
+        </select>
+        <Input style="height:30px;border-radius: 5px;" type="date" id="Date" placeholder="Date">
+        <select style="height:30px;border-radius: 5px;" class="form-select" id="time" name="Time" required>
+            <option value="">Select Time</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+            <option value="5:00 PM">5:00 PM</option>
+            <option value="6:00 PM">6:00 PM</option>
+            <option value="7:00 PM">7:00 PM</option>
+            <option value="8:00 PM">8:00 PM</option>
+            <option value="9:00 PM">9:00 PM</option>
+            <option value="10:00 PM">10:00 PM</option>
+            <option value="11:00 PM">11:00 PM</option>
+        </select>
+        <br>
+        <br>
+        <select style="height:30px;border-radius: 5px;" class="form-select" id="occasion" name="Select an Occasion"
+            required>
+            <option value="">Select an Occasion(Optional)</option>
+            <option value="Birthday">Birthday</option>
+            <option value="Anniversary">Anniversary</option>
+            <option value="Date">Date</option>
+            <option value="Special Occasion">Special Occasion</option>
+            <option value="Business Meal">Business Meal</option>
+            <option value="Others">Others</option>
+        </select>
+        <br>
+        <br>
+        <textarea row="1000" col="1000" placeholder="Add a special request(optional)"></textarea>
+        <br><br>
+        <input type="Checkbox" name="reminder">
+        <label>Yes, I want to get text updates and reminders about my reservations</label>
+        <br>
+        <br>
+        <button class="confirmation">Confirm reservation</button>
+
+
+
+    </div>
+</body>
+
+</html>
