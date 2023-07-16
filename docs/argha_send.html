@@ -1,47 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html {
+	font-size: 2vw;
+	font-family: 'Brush Script MT', cursive;
+    }
 
-    <title>Review</title>
-    <style>
-        body {
-            background-color: #270624;
-            font-size: 30px;
-        }
+    body {
+        background-color: #20061e;
+    }
 
-        #post_review {
-            background-color: #7e7b7d;
-            padding-left: 6px;
-            border-radius: 3px;
-            margin-left: 20px;
-            transition: transform 0.5s;
-        }
+    #post-review {
+        background-color: #ffffff;
+        border-radius: 3rem;
+        margin-top: 4rem;
+        transition: transform 0.5s;
+	margin-left: 4.5rem;
+    }
 
-        #post_review:hover {
-            cursor: pointer;
-            transform: scale(1.5);
-        }
+    #post-review:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
 
-        textarea {
-            width: 40%;
-            height: 150px;
-            padding: 12px 20px;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            background-color: #7e7b7d;
-            font-size: 15px;
-        }
+    ::placeholder {
+	font-family: 'Brush Script MT', cursive;
+    }
 
-        .neon:hover {
-            animation: neon-flicker 1.5s infinite;
-        }
+    #this-textarea {
+	margin-left:-6rem;;
+        width: 25.5rem;
+        height: 10rem;
+        padding: 2rem;
+	resize: none;
+        box-sizing: border-box;
+        border-radius: 3rem;
+        background-color: #ffffff;
+        font-size: 1rem;
+    }
 
-        @keyframes neon-flicker {
-            0%, 15%, 30%, 45%, 60%, 75%, 100% {
-                box-shadow:
+    .neon-text-static {
+	margin-left: -1rem;
+	letter-spacing: 1rem;
+        text-shadow:
+            0 0 4px #ffffff,
+            0 0 10px #ffffff,
+            0 0 15px #ffffff,
+            0 0 30px #94458e,
+            0 0 60px #94458e,
+            0 0 80px #94458e,
+            0 0 100px #94458e,
+            0 0 120px #94458e;
+    }
+
+    .neon-box {
+	margin-top: 3rem;
+	border-radius: 3rem;
+        box-shadow:
+            0 0 4px #ffffff,
+            0 0 6px #ffffff,
+            0 0 8px #ffffff,
+            0 0 9px #94458e,
+            0 0 10px #94458e,
+            0 0 13px #94458e,
+            0 0 14px #94458e,
+            0 0 15px #94458e;
+    }
+
+    .neon-box:hover {
+        animation: neon-box-flicker 1.5s infinite;
+    }
+
+    @keyframes neon-box-flicker {
+        0%, 15%, 30%, 45%, 60%, 75%, 100% {
+            box-shadow:
                 0 0 4px #ffffff,
                 0 0 10px #ffffff,
                 0 0 15px #ffffff,
@@ -50,41 +83,48 @@
                 0 0 80px #94458e,
                 0 0 100px #94458e,
                 0 0 120px #94458e;
-            }
-            25%, 35%, 45% {
-                box-shadow: none;
-            }
         }
+        25%, 35%, 45% {
+            box-shadow: none;
+        }
+    }
 
-    </style>
+    .sendmessage {
+        margin: auto;
+	width: 15rem;
+    }
+
+    .input-field {
+	width: 10rem;
+        height: 2rem;
+	padding-left: 2rem;
+	font-size: 1rem;
+	background-color: #ffffff;
+    }
+
+  </style>
 </head>
 
 <body>
-    <div class="arg_sendmessage">
-        <h2>Tell us your thoughts</h2>
-        <form>
-            <input style="width:30%;
-                height: 20px; padding: 5px 5px; font-size: 15px;" type="text" id="your-name"
-                placeholder="Name" class="neon">
-            <br>
-            <br>
-            <input style="width: 30%;
-                height: 20px; padding: 5px 5px; font-size: 15px;" type="tel" id="phone-num"
-                Placeholder="Mobile" class="neon">
-            <br>
-            <br>
-            <input style="width: 30%;
-                height: 20px; padding: 5px 5px; font-size: 15px;" type="email" id="email-address"
-                Placeholder="Email" class="neon">
-            <br>
-            <br>
-            <textarea row="4096" col="4096" placeholder="Your review goes here..." class="neon"></textarea>
-            <br>
-            <button id="post_review" class="neon">Post review</button>
-        </form>
+  <div class="sendmessage">
+    <h1 style="color: #ffffff;" class="neon-text-static">Tell us your thoughts</h1>
+    <form>
+      <input type="text" id="your-name" placeholder="name" class="neon-box input-field">
+      <br>
+      <br>
+      <input type="tel" id="phone-num" placeholder="mobile" class="neon-box input-field">
+      <br>
+      <br>
+      <input type="email" id="email-address" placeholder="email" class="neon-box input-field">
+      <br>
+      <br>
+      <textarea row="4096" col="4096" placeholder="Your review goes here..." id="this-textarea" class="neon-box"></textarea>
+      <br>
+      <button style="font-family: 'Brush Script MT', cursive;" id="post-review" class="neon-box">Post review</button>
+    </form>
 
 
-    </div>
+  </div>
 
 </body>
 
