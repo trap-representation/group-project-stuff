@@ -7,20 +7,19 @@
     <title>Review</title>
     <style>
         body {
-            background-color: rgba(245, 223, 135, 0.855);
+            background-color: rgb(9.8, 0.1, 10.1);
             font-size: 30px;
         }
 
         #post_review {
-            background-color: rgb(129, 116, 104);
+            background-color: #7e7b7d;
             padding-left: 6px;
             border-radius: 3px;
             margin-left: 20px;
             transition: transform 0.5s;
         }
 
-        button:hover {
-            color: rgba(224, 215, 205, 0.908);
+        #post_review:hover {
             cursor: pointer;
             transform: scale(1.5);
         }
@@ -32,10 +31,30 @@
             box-sizing: border-box;
             border: 2px solid #ccc;
             border-radius: 4px;
-            background-color: white;
-            resize: none;
+            background-color: #7e7b7d;
             font-size: 15px;
         }
+
+        .neon {
+            animation: neon-flicker 1.5s infinite alterance
+        }
+
+        @keyframes neon-flicker {
+            0%, 15%, 30%, 45%, 60%, 75%, 100% {
+                box-shadow:
+                0 0 4px #ffffff;
+                0 0 10px #ffffff;
+                0 0 15px #ffffff;
+                0 0 30px #94458e;
+                0 0 60px #94458e;
+                0 0 80px #94458e;
+                0 0 100px #ffffff;
+            }
+            25%, 35%, 45% {
+                box-shadow: none
+            }
+        }
+
     </style>
 </head>
 
@@ -43,26 +62,34 @@
     <div class="arg_sendmessage">
         <h2>Tell us your thoughts</h2>
         <form>
-            <input style="width:30%;
-                height: 20px;padding: 5px 5px;font-size: 15px;" type="text" id="your-name"
-                placeholder="Name">
-            <br>
-            <br>
-            <input style="width: 30%;
-                height: 20px;padding: 5px 5px;font-size: 15px;" type="tel" id="phone-num"
-                Placeholder="Mobile">
-            <br>
-            <br>
-            <input style="width: 30%;
-                height: 20px;padding: 5px 5px;font-size: 15px;" type="email" id="email-address"
-                Placeholder="Email">
-
-            <br>
-            <br>
-            <textarea row="5000" col="5000" placeholder="Your review goes here..."></textarea>
-            <br>
-
-            <button id="post_review">Post review</button>
+            <div class="neon-box">
+              <input style="width:30%;
+                  height: 20px; padding: 5px 5px; font-size: 15px;" type="text" id="your-name"
+                  placeholder="Name">
+              <br>
+              <br>
+            </div>
+            <div class="neon-box">
+              <input style="width: 30%;
+                  height: 20px; padding: 5px 5px; font-size: 15px;" type="tel" id="phone-num"
+                  Placeholder="Mobile">
+              <br>
+              <br>
+            </div>
+            <div class="neon-box">
+              <input style="width: 30%;
+                  height: 20px; padding: 5px 5px; font-size: 15px;" type="email" id="email-address"
+                  Placeholder="Email">
+              <br>
+              <br>
+            </div>
+            <div class="neon">
+              <textarea row="4096" col="4096" placeholder="Your review goes here..."></textarea>
+              <br>
+            </div>
+            <div class="neon">
+              <button id="post_review">Post review</button>
+            </div>
         </form>
 
 
