@@ -48,7 +48,8 @@
                 0 0 30px #94458e,
                 0 0 60px #94458e,
                 0 0 80px #94458e,
-                0 0 100px #94458e;
+                0 0 100px #94458e,
+                0 0 120px #94458e;
             }
             25%, 35%, 45% {
                 box-shadow: none;
@@ -62,34 +63,24 @@
     <div class="arg_sendmessage">
         <h2>Tell us your thoughts</h2>
         <form>
-            <div class="neon-box">
-              <input style="width:30%;
-                  height: 20px; padding: 5px 5px; font-size: 15px;" type="text" id="your-name"
-                  placeholder="Name">
-              <br>
-              <br>
-            </div>
-            <div class="neon-box">
-              <input style="width: 30%;
-                  height: 20px; padding: 5px 5px; font-size: 15px;" type="tel" id="phone-num"
-                  Placeholder="Mobile">
-              <br>
-              <br>
-            </div>
-            <div class="neon-box">
-              <input style="width: 30%;
-                  height: 20px; padding: 5px 5px; font-size: 15px;" type="email" id="email-address"
-                  Placeholder="Email">
-              <br>
-              <br>
-            </div>
-            <div class="neon">
-              <textarea row="4096" col="4096" placeholder="Your review goes here..."></textarea>
-              <br>
-            </div>
-            <div class="neon">
-              <button id="post_review">Post review</button>
-            </div>
+            <input style="width:30%;
+                height: 20px; padding: 5px 5px; font-size: 15px;" type="text" id="your-name"
+                placeholder="Name" class="neon">
+            <br>
+            <br>
+            <input style="width: 30%;
+                height: 20px; padding: 5px 5px; font-size: 15px;" type="tel" id="phone-num"
+                Placeholder="Mobile" class="neon">
+            <br>
+            <br>
+            <input style="width: 30%;
+                height: 20px; padding: 5px 5px; font-size: 15px;" type="email" id="email-address"
+                Placeholder="Email" class="neon">
+            <br>
+            <br>
+            <textarea row="4096" col="4096" placeholder="Your review goes here..." class="neon"></textarea>
+            <br>
+            <button id="post_review" class="neon">Post review</button>
         </form>
 
 
