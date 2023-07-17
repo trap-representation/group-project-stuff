@@ -14,7 +14,8 @@
             width: 101%;
             height: 150px;
             margin: -10px -10px;
-            display: block;
+            display: flex;
+            position: fixed;
         }
 
         .logo {
