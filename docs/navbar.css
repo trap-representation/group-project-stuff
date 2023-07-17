@@ -10,6 +10,7 @@
             height: 150px;
             margin: -10px -10px;
             display: flex;
+            position: fixed;
         }
 
         .logo {
