@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR PROJECTS</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Montserrat:wght@100&family=Noto+Sans&family=Poppins:wght@100;300&family=Roboto&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            /* border: 2px solid red; */
+            background-color: #20061e;
+            color: white;
+            display: flex;
+            width: 101%;
+            height: 150px;
+            margin: -10px -10px;
+            position: fixed;
+        }
+
+        .logo {
+            /* border: 2px solid red; */
+            margin: 11px;
+        }
+
+        .logo img {
+            width: 90px;
+            margin-left: 75px;
+            margin-top: 5px;
+            width: 230px;
+        }
+
+        .navbar {
+            /* border: 2px solid red; */
+            width: 520px;
+            display: inline-block;
+            margin: auto;
+            /* flex-direction: row; */
+        }
+
+        .navbar_style {
+            display: flex;
+        }
+
+        .item {
+            padding: 6px 11px;
+            list-style: none;
+            font-size: 19px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .item:hover {
+            color: #ffffff;
+            /* opacity: var(-10px); */
+        }
+
+        .booking {
+            margin: 45px;
+            margin-right: 80px;
+            width: 148px;
+            height: 59px;
+        }
+
+        #order-btn {
+            font-size: 20px;
+            margin: 17px 11px;
+            padding-left: 19px;
+            cursor: pointer;
+        }
+
+        /* Nav-Bar-2 */
+
+        .nav-wraper {
+            width: 100%;
+            display: none;
+        }
+
+        .nav-bar{
+            background-color: #20061e;
+            padding: 0.5rem 0;
+        }
+
+        .nav-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bx-menu {
+            color: red;
+            font-size: 2.8rem;
+            cursor: pointer;
+        }
+
+        .drop-bar{
+            /* background-color: rgb(40, 40, 40); */
+            padding: 2rem;
+            opacity: 0;
+            transition: all 0.2s;
+        }
+        .drop-bar.active{
+            opacity: 1;
+        }
+
+        .drop-bar li{
+            font-size: 1.1rem;
+            list-style: none;
+            font-weight: 800;
+        }
+        .list-item{
+            margin-bottom: 0.5rem;
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+        .list-item:hover{
+            color: #ffffff;
+        }
+
+        @media screen and (max-width: 1069px) {
+            .container{
+                display: none;
+            }
+            .nav-wraper{
+                display: block;
+            }
+        }
+
+        .drop-bar{
+            background-color:  #20061e;
+            color: white;
+        }
+    
+    
+    </style>
+</head>
+
+<body>
+    
+    <!-- NavBar-1  -->
+
+    <div class="container">
+        <div class="logo">
+            <img src="Ottawa-Kabab-300x135.png" alt="">
+        </div>
+        <div class="navbar">
+            <ul class="navbar_style">
+                <li class="item" id="item1">Home</li>
+                <li class="item" id="item2">Category</li>
+                <li class="item" id="item3">About Us</li>
+                <li class="item" id="item4">Review</li>
+                <li class="item" id="item5">Contact us</li>
+            </ul>
+        </div>
+        <div class="booking">
+            <p>Order now</p>
+        </div>
+    </div>
+
+    <!-- NavBar-2  -->
+    <div class="nav-wraper">
+        <div class="nav-bar">
+            <div class="nav-container">
+
+                <div class="logo-nav">
+                    <img src="Ottawa-Kabab-300x135.png" alt="" width="230px">
+                </div>
+
+                <i class='bx bx-menu' id="btn"></i>
+
+            </div>
+        </div>
+
+        <ul class="drop-bar">
+            <li class="list-item">Home</li>
+            <li class="list-item">Category</li>
+            <li class="list-item">About Us</li>
+            <li class="list-item">Review</li>
+            <li class="list-item">contact Us</li>
+            <li class="list-item">Order Now</li>
+
+        </ul>
+
+    </div>
+
+
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let dropBar = document.querySelector('.drop-bar');
+
+        btn.onclick = function(){
+            dropBar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
