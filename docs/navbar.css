@@ -9,7 +9,7 @@
             width: 101%;
             height: 150px;
             margin: -10px -10px;
-            position: fixed;
+            display: flex;
         }
 
         .logo {
