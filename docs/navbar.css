@@ -1,6 +1,10 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
         .container {
             /* border: 2px solid red; */
-            background-color: #20061e;
+            opacity: 0;
             color: white;
             width: 101%;
             height: 150px;
@@ -68,7 +72,7 @@
         }
 
         .nav-bar{
-            background-color: #20061e;
+            opacity: 0;
             padding: 0.5rem 0;
         }
 
