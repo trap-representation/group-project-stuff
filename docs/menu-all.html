@@ -2,6 +2,7 @@
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <title>Taste Bud - Menus</title>
 </head>
 
 <body>
@@ -11,11 +12,13 @@
     </div>
     <div class="navbar">
       <ul class="navbar_style">
-	<li class="item neon-text" id="item1"><a href="index.html">Home</a></li>
-        <li class="item neon-text" id="item2"><a href="#menu-items">Menu</a></li>
-        <li class="item neon-text" id="item4">About Us</li>
-        <li class="item neon-text" id="item5"><a href="post_review.html">Review</a></li>
-        <li class="item neon-text" id="item6">Contact us</li>
+	<li class="item neon-text"><a href="index.html">Home</a></li>
+        <li class="item neon-text"><a href="#menu-items">Menu</a></li>
+        <li class="item neon-text"><a href="index.html#about-us">About Us</a></li>
+        <li class="item neon-text"><a href="post_review.html">Review</a></li>
+        <li class="item neon-text"><a href="gallery.html">Gallery</a></li>
+	<li class="item neon-text"><a href="offer_page.html">Offers</a></li>
+        <li class="item neon-text"><a href="index.html#contact-thing">Contact us</a></li>
       </ul>
     </div>
     <div class="booking">
@@ -41,15 +44,17 @@
     <ul class="drop-bar">
       <li class="list-item neon-text"><a href="index.html">Home</a></li>
       <li class="list-item neon-text"><a href="#menu-items">Menu</a></li>
-      <li class="list-item neon-text">About Us</li>
+      <li class="list-item neon-text"><a href="index.html#about-us">About Us</a></li>
       <li class="list-item neon-text"><a href="post_review.html">Review</a></li>
-      <li class="list-item neon-text">Contact Us</li>
+      <li class="list-item neon-text"><a href="gallery.html">Gallery</a></li>
+      <li class="list-item neon-text"><a href="offer_page.html">Offers</a></li>
+      <li class="list-item neon-text"><a href="index.html#contact-thing">Contact Us</a></li>
       <li class="list-item neon-text"><a href="#order_now">Order Now</a></li>
 
     </ul>
   </div>
 
-  <div id="menu-items" class="neon-box-static-green" style="top: 10vw; left: 20rem; position: absolute; height: 20rem; width: 10rem; border-radius: .3rem;">
+    <div id="menu-items" class="neon-box-static-green" style="top: 10vw; left: 20rem; position: absolute; height: 20rem; width: 10rem; border-radius: .3rem;">
     <p class="neon-text-static-yellow-weebit" style="position: absolute; left: .3rem; top: .5rem; color: #ffffff; font-size: 2rem;">Indian foods</p>
     <p style="position: absolute; left: .5rem; top: 4rem; color: #ffffff; font-size: 1.2rem;">#1 Pulao</p>
     <p style="position: absolute; left: .5rem; top: 6rem; color: #ffffff; font-size: 1.2rem;">#2 Kasha mangsha</p>
@@ -101,11 +106,13 @@
       <br>
       <textarea onchange="check_valid_items()" row="4096" col="4096" placeholder="Your order goes here..." id="this-textarea" class="neon-box-dynamic-green neon-box-static-green" style="border-radius: 3rem; margin-top: 3rem;"></textarea>
       <br>
-      <p id="final-price" style="margin-top: 3rem; color: #ffffff;">You'll have to pay: Rs. 0</p>
+      <div id="menu-items" class="neon-box-static-red" style="margin-top: 3rem; margin-left: 1rem; border-radius: .3rem; width: 10rem;">
+	<p id="final-price" style="margin-left: .6rem; margin-top: 3rem; color: #ffffff;">You'll have to pay: Rs. 0</p>
+      </div>
       <input type="submit" value="Pay with cash" style="font-family: 'Brush Script MT', cursive;" id="post-review" class="neon-box-dynamic-red neon-box-static-red">
     </form>
   </div>
-  <footer class="footer" style="position: absolute; top: 270vw; font-family: Serif; font-size: .4rem;">
+  <footer id="contact-thing"class="footer" style="position: absolute; top: 270vw; font-family: Serif; font-size: .4rem;">
     <div class="container1">
       <div class="row">
         <div class="footer-col">
@@ -157,12 +164,6 @@
           <p>
             +91 6295374534
           </p>
-          <div class="social-icons">
-            <a href="#" ><i class="fab fa-facebook-f"></i></a>
-            <a href="#" ><i class="fab fa-instagram"></i></a>
-            <a href="#" ><i class="fab fa-twitter"></i></a>
-            <a href="#" ><i class="fab fa-pinterest"></i></a>
-          </div>
         </div>
       </div>
     </div>

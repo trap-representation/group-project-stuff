@@ -2,7 +2,7 @@ let order_array_thingy=["Pulao", "Kasha mangsha", "Rui macher kalia", "Shorshe i
 
 let prices=[100,200,300,250,300,200,100,150,80,190,170,130,200,250,200,250,140,100,90,100];
 
-let org_prices=[150,200,300,250,300,200,100,150,180,190,170,130,200,250,200,260,140,100,90,190];
+let org_prices=[150,200,360,250,300,200,100,150,180,190,170,130,200,250,200,260,140,100,90,190];
 
 function check_valid_items(){
     let ord=document.getElementById("this-textarea");

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -492,7 +493,7 @@ img {
 }
 
 .booking-table {
-    width: 179px;
+    width: 2rem;
     height: 65px;
     color: #ffffff;
     cursor: pointer;
@@ -571,6 +572,7 @@ footer {
     left: 10px;
     animation: moving 2s linear infinite;
 }
+
 @keyframes moving{
     0%{
         left: -20px;
@@ -581,12 +583,7 @@ footer {
 
     }
 }
-hr{
-    width: 90%;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    margin: 20px auto;
-}
+
 .copyright{
     text-align: center;
 }
@@ -596,4 +593,113 @@ a {
     color: #ffffff;
     active: #ffffff;
     text-decoration: none;
+}
+
+.image {
+    width: 40rem;
+    height: 20rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    border-radius: 1rem;
+    position: relative;
+    display: inline;
+}
+
+.heading {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 4rem;
+    padding-left: 3rem;
+}
+
+.contain {
+    color: white;
+    display: inline-block;
+    /* font-size: 60px; */
+}
+
+.describe{
+    display: inline-block;
+    margin-left: 15rem;
+    margin-top: 3rem;
+    /* width: 25px; */
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.description{
+    display: inline-block;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    width: 30rem;
+}
+
+.contain1{
+    display: flex;
+}
+
+.image1{
+    display: inline;
+    /* font-size: 25px; */
+    width: 10rem;
+    height: 10rem;
+    /* background-color: red;
+            border-radius: 39px; */
+    margin-left: 5.5rem;
+    margin-top: 1rem;
+}
+
+.description1{
+    display: inline-block;
+    margin-top: 1.3rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.container-anon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 1rem 1rem;
+
+}
+.container-anon .heading{
+    width: 60%;
+    padding-bottom: 1rem;
+}
+.container-anon .heading h1{
+    font-size: 500;
+    font-weight: 90;
+    padding-bottom: .5rem;
+    border-bottom: .5rem solid #222;
+
+}
+.container-anon .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+.container-anon .box .photos{
+    display: flex;
+    flex-direction: column;
+    width: 30.5%;
+}
+
+.container-anon .box .photos img{
+    width:98%;
+    padding-bottom: .7rem;
+    border-radius: .6rem;
+}
+
+.photos img:hover{
+    transform: scale(1.3);
 }
