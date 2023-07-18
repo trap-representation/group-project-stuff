@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE PAGE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Charm&family=Montserrat:wght@100&family=Noto+Sans&family=Poppins:wght@100;300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        .home {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .back-video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            opacity: 1;
+            font-size: 100%;
+            background: transparent;
+            -webkit-text-size-adjust: 100%;
+            vertical-align: baseline;
+        }
+
+        .title-page {
+            display: flex;
+            flex-direction: column;
+            margin: 75px 100px;
+        }
+
+        .resturant_name {
+            font-size: 25px;
+            font-family: 'Charm';
+            color: red;
+        }
+
+        .title {
+            padding: 0;
+            margin: -13px;
+            font-size: 75px;
+            font-family: 'Lunasima', sans-serif;
+            color: white;
+        }
+
+        .disclaimer {
+            font-size: 20px;
+            color: white;
+            width: 555px;
+            font-family: 'Ubuntu', sans-serif;
+            margin-top: 35px;
+        }
+
+        .booking-table {
+            width: 179px;
+            height: 65px;
+            background-color: red;
+            color: white;
+            margin-top: 35px;
+            cursor: pointer;
+        }
+
+        .book {
+            font-size: 17px;
+            margin-top: 13px;
+        }
+
+        .booking-table:hover {
+            color: rgb(205, 205, 205);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source class="video" src="steak_-_16406 (720p).mp4" type="video/mp4">
+        </video>
+        <div class="title-page">
+            <img class="new-image" src="Dox5tC-red-lines-image-removebg-preview.png" alt="">
+            <h3 class="resturant_name">- Welcome To Ottawa's</h3>
+            <h1 class="title">Authentic</h1>
+            <h1 class="title">Mediterranean</h1>
+            <h1 class="title">Restaurant</h1>
+            <p class="disclaimer">
+                At Ottawa Kabab, we take pride in serving the finest Mediterranean cuisine, focusing on homemade and
+                authentic dishes from Syria, Lebanon, and Iraq.
+            </p>
+            <button class="booking-table">
+                <p class="book">Book A Table</p>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
