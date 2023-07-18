@@ -501,7 +501,9 @@ img {
 }
 
 .book {
+    width: 10rem;
     top: 30rem;
+    font-size: 1.5rem;
 }
 
 .booking-table:hover {
