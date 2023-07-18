@@ -489,22 +489,18 @@ img {
     width: 20rem;
     font-size: .8rem;
     color: #ffffff;
-    margin-top: 35px;
 }
 
 .booking-table {
     width: 179px;
     height: 65px;
     color: #ffffff;
-    margin-top: 35px;
     cursor: pointer;
 }
 
 .book {
     width: 10rem;
-    top: 30rem;
+    top: 25vw;
     font-size: 1.5rem;
 }
 
-.booking-table:hover {
-}
