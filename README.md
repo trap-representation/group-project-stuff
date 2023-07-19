@@ -1,4 +1,4 @@
-Everything on the website, but the pictures, is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+Everything on the website, but the media, is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
 
 Copyright (c) 2023 Somdipto Chakraborty, Argha Chakraborty, Aniket Dey, Rupam Mondal, Ayan Biswas, Kreeti Kumari Gupta.
 
