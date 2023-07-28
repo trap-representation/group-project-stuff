@@ -7,10 +7,10 @@ function slideshow_invoke(){
     for(i=0;i<slides.length;i++){
 	slides[i].style.display="none";
     }
-    si++;
-    if(si>slides.length){
-	si=1;
+    if(si==slides.length){
+	si=0;
     }
-    slides[si-1].style.display="block";
+    slides[si].style.display="block";
+    si++;
     setTimeout(slideshow_invoke,2000);
 }
