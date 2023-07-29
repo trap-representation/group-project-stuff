@@ -1,7 +1,6 @@
 function ham_popin(){
     let vh=window.innerHeight;
     if(vh>100){
-	console.log("right there?");
 	document.getElementById("ham-menu").style.height="250px";
     }
     else{
