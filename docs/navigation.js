@@ -4,7 +4,6 @@ function ham_popin(){
 	document.getElementById("ham-menu").style.height="250px";
     }
     else{
-	console.log("what?");
 	document.getElementById("ham-menu").style.width="250px";
     }
 }
